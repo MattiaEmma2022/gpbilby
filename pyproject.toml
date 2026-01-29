@@ -8,13 +8,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gpbilby"
-[project]
 authors = [
   { name = "Gregory Ashton", email = "gregory.ashton@ligo.org" },
-  { name = "Mattia Emma", email="mattia.emma@ligo.org" },
-  {name = "Ann-Kirstin Malz"}
+  { name = "Mattia Emma", email = "mattia.emma@ligo.org" },
+  { name = "Ann-Kirstin Malz" }
 ]
-version = "0.0.1"
+maintainers = [
+  { name = "Gregory Ashton", email = "gregory.ashton@ligo.org" },
+  { name = "Mattia Emma", email = "mattia.emma@ligo.org" },
+  { name = "Ann-Kirstin Malz" }
+]
+version = "0.0.2"
 description = "A package to perform gravitational wave data analysis combining the Whittle likelihood with Gaussian processes"
 readme = "README.md"
 requires-python = ">=3.9"
