@@ -1,0 +1,42 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: gpbilby
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: 'Mattia '
+    family-names: Emma
+    email: mattia.emma@ligo.org
+    affiliation: Royal Holloway university of London
+    orcid: 'https://orcid.org/0000-0001-7943-0262'
+  - given-names: Gregory
+    family-names: ' Ashton'
+    email: gregory.ashton@ligo.org
+    affiliation: Royal Holloway university of London
+    orcid: 'https://orcid.org/0000-0001-7288-2231'
+  - given-names: Ann-Kristin
+    family-names: Malz
+    email: ann-kristin.malz@ligo.org
+    affiliation: Royal Holloway University
+    orcid: 'https://orcid.org/0009-0004-7196-4170'
+repository-code: 'https://github.com/MattiaEmma2022/gpbilby'
+abstract: >-
+  Gravitational wave parameter estimation software using
+  Gaussian processes to obtain a noise covariance matrix
+  directly modelling the detector noise non-Gaussian and
+  non-stationary features. 
+
+  The covariance matrix is parametrized using celerite
+  kernel functions.
+
+  The framework allows for the simultaneous inference of
+  signal and noise.
+keywords:
+  - parameter estimation
+  - astrophysics
+  - gravitational wave astronomy
+license: MIT
