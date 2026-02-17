@@ -42,3 +42,8 @@ dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[options.entry_points]
+console_scripts =
+    gpbilby = gpbilby:main
+    gpbilby_plot = gpbilby.plot:cl_plot
