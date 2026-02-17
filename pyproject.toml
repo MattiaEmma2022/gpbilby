@@ -9,12 +9,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gpbilby"
 authors = [
-  { name = GPBilby Developers}
+  { name = "GPBilby Developers" }
 ]
 maintainers = [
   { name = "Gregory Ashton", email = "gregory.ashton@ligo.org" },
   { name = "Mattia Emma", email = "mattia.emma@ligo.org" },
-  { name = "Ann-Kirstin Malz", email ="ann-kristin.malz@ligo.org" }
+  { name = "Ann-Kirstin Malz", email = "ann-kristin.malz@ligo.org" }
 ]
 version = "0.0.1"
 description = "A package to perform gravitational wave data analysis combining the Whittle likelihood with Gaussian processes"
@@ -26,13 +26,15 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = {text = "MIT"}
+keywords = ["gravitational waves", "bayesian inference", "gaussian processes"]
 
 [project.urls]
 Homepage = "https://github.com/MattiaEmma2022/gpbilby"
 Issues = "https://github.com/MattiaEmma2022/gpbilby/issues"
 
-[tool.setuptools_scm]
-write_to = "src/gpbilby/_version.py"
+[project.scripts]
+gpbilby = "gpbilby:main"
+gpbilby_plot = "gpbilby.plot:cl_plot"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -42,8 +44,3 @@ dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[options.entry_points]
-console_scripts =
-    gpbilby = gpbilby:main
-    gpbilby_plot = gpbilby.plot:cl_plot
