@@ -20,7 +20,7 @@ version = "0.0.1"
 description = "A package to perform gravitational wave data analysis combining the Whittle likelihood with Gaussian processes"
 dynamic = ["dependencies"]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
